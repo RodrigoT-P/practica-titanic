@@ -46,6 +46,6 @@ st.markdown("___")
 
 fig4, ax4 = plt.subplots()
 ax4 = titanic_data.boxplot(["Age"])
-ax4.set_ylabel("Fare")
+ax4.set_ylabel("Edad")
 st.header("Gráfica de cajas por Edad")
 st.pyplot(fig4)
