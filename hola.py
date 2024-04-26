@@ -32,3 +32,12 @@ ax2.set_title("¿Cuánto pagaron las clases del titanic?")
 
 st.header("Grafica de Barras del Titanic")
 st.pyplot(fig2)
+
+st.markdown("___")
+
+fig3, ax3 = plt.subplots()
+ax3.scatter(titanic_data.Age, titanic_data.Fare)
+ax3.set_xlabel("Edad")
+ax3.set_ylabel("Tarifa")
+st.header("Gráfica de Dispersión del Titanic")
+st.puplot(fig3)
