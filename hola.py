@@ -9,3 +9,8 @@ titanic_data = pd.read_csv(titanic_link)
 st.dataframe(titanic_data)
 
 import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+ax.hist(titanic_data.fare)
+st.header("Histograma del Titanic")
+st.pyplot(fig)
