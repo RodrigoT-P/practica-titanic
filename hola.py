@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("Titanic app")
-st.header("Demo Titanic App")
-st.write("Gráficas de titanic")
+st.header("Titanic Graphs")
+st.write("Rodrigo Torres | A01703521")
 
 import pandas as pd
 titanic_link = "titanic.csv"
