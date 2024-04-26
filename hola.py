@@ -41,3 +41,11 @@ ax3.set_xlabel("Edad")
 ax3.set_ylabel("Tarifa")
 st.header("Gráfica de Dispersión del Titanic")
 st.pyplot(fig3)
+
+st.markdown("___")
+
+fig4, ax4 = plt.subplots()
+ax4 = titanic_data.boxplot(["Age"])
+ax4.set_ylabel("Fare")
+st.header("Gráfica de cajas por Edad")
+st.pyplot(fig4)
