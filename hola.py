@@ -17,7 +17,7 @@ st.pyplot(fig)
 
 fig, ax = plt.subplots()
 ax.hist(titanic_data.Age)
-st.header("Histograma del Titanic- columna Pclass ")
+st.header("Histograma del Titanic- columna Age ")
 st.pyplot(fig)
 
 st.markdown("___")
