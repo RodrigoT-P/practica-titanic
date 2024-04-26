@@ -8,7 +8,7 @@ titanic_link = "titanic.csv"
 titanic_data = pd.read_csv(titanic_link)
 st.dataframe(titanic_data)
 
-import matplotlib.pyplot as plt
+"""import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots()
 ax.hist(titanic_data.Fare)
