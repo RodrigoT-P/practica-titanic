@@ -49,3 +49,18 @@ ax4 = titanic_data.boxplot(["Age"])
 ax4.set_ylabel("Edad")
 st.header("Gráfica de cajas por Edad")
 st.pyplot(fig4)
+
+st.markdown("___")
+
+import numpy as np
+fig5, ax5 = plt.subplots()
+hist_class = np.histogram(titanic_data["Pclass"], bins=3, range=(1,3))[0]
+
+labels = ["Clase 1", "Clase 2", "Clase 3"]
+colors = ["tab:blue", "tab:red", "tab:green"]
+explode = [0, 0, 0.2]
+
+ax5.pie(hist_class, labels = labels, colors = colors, explode = explode, shadow = True)
+st.header("Gráfica de pastel - Clase social")
+st.pyplot(fig5)
+st.dataframe(hist_class)
