@@ -60,7 +60,12 @@ labels = ["Clase 1", "Clase 2", "Clase 3"]
 colors = ["tab:blue", "tab:red", "tab:green"]
 explode = [0, 0, 0.2]
 
-ax5.pie(hist_class, labels = labels, colors = colors, explode = explode, shadow = True)
+ax5.pie(hist_class, 
+        labels = labels, 
+        colors = colors, 
+        explode = explode, 
+        shadow = True)
+
 st.header("Gráfica de pastel - Clase social")
 st.pyplot(fig5)
 st.dataframe(hist_class)
