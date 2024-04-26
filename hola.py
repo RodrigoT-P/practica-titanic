@@ -30,3 +30,5 @@ ax2.set_ylabel("Class")
 ax2.set_xlabel("Fare")
 ax2.set_title("¿Cuánto pagaron las clases del titanic?")
 
+st.header("Grafica de Barras del Titanic")
+st.pyplot(fig2)
